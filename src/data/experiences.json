@@ -90,14 +90,12 @@
       "en": [
         "Developed native mobile applications using Kotlin with modern asynchronous programming approaches.",
         "Utilized Kotlin Flow, StateFlow, and SharedFlow to improve performance through asynchronous and non-blocking data handling.",
-        "Applied internal Clean Code architecture standards to ensure maintainable, scalable, and high-quality codebase.",
-        "Collaborated with cross-functional teams to deliver robust and user-friendly applications."
+        "Applied internal Clean Code architecture standards to ensure maintainable, scalable, and high-quality codebase."
       ],
       "id": [
         "Mengembangkan aplikasi mobile native menggunakan Kotlin dengan pendekatan pemrograman asinkron modern.",
         "Memanfaatkan Kotlin Flow, StateFlow, dan SharedFlow untuk meningkatkan kinerja melalui penanganan data asinkron dan non-blocking.",
-        "Menerapkan standar arsitektur Clean Code internal untuk memastikan basis kode yang mudah dipelihara, skalabel, dan berkualitas tinggi.",
-        "Berkolaborasi dengan tim lintas fungsi untuk menghasilkan aplikasi yang tangguh dan ramah pengguna."
+        "Menerapkan standar arsitektur Clean Code internal untuk memastikan basis kode yang mudah dipelihara, skalabel, dan berkualitas tinggi."
       ]
     }
   },

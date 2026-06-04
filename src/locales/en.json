@@ -9,7 +9,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "tagline": "Crafting High-Performance Full Stack & Mobile Solutions",
+    "tagline": "Turning Complex Problems into Elegant Solutions",
     "subtagline": "Software Engineer",
     "intro": "I turn complex requirements into elegant, clean, and highly optimized digital experiences.",
     "cta_projects": "View My Work",
@@ -28,7 +28,7 @@
     }
   },
   "skills": {
-    "title": "Core Skills",
+    "title": "Skills",
     "subtitle": "Interactive Technology & Skill Clusters",
     "hover_instruction": "My technical proficiency and depth of expertise across different areas",
     "expert": "Expert",
@@ -57,7 +57,7 @@
     "present": "Present"
   },
   "certifications": {
-    "title": "Professional Certifications",
+    "title": "Certifications",
     "subtitle": "Verified technical credentials and training",
     "verify": "Verify Credential",
     "download": "Download PDF",

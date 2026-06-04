@@ -6,21 +6,21 @@
     "projects": "Proyek",
     "experience": "Pengalaman",
     "certifications": "Sertifikasi",
-    "contact": "Hubungi"
+    "contact": "Kontak"
   },
   "hero": {
-    "tagline": "Membangun Solusi Full Stack & Mobile Berkinerja Tinggi",
+    "tagline": "Merancang Solusi Elegan untuk Tantangan yang Kompleks",
     "subtagline": "Software Engineer",
-    "intro": "Saya mengubah kebutuhan yang kompleks menjadi pengalaman digital yang elegan, bersih, dan sangat optimal.",
-    "cta_projects": "Lihat Karya Saya",
+    "intro": "Saya mengubah kebutuhan yang kompleks menjadi pengalaman digital yang elegan, bersih, dan teroptimasi.",
+    "cta_projects": "Lihat Proyek",
     "cta_contact": "Hubungi Saya",
-    "status_available": "Tersedia untuk Bekerja"
+    "status_available": "Tersedia untuk Proyek"
   },
   "about": {
     "title": "Tentang Saya",
-    "subtitle": "Kisah Saya & Filosofi Profesional",
-    "philosophy_title": "Filosofi Profesional",
-    "philosophy_text": "Bagi saya, pengembangan bukan hanya tentang menulis baris kode; ini tentang menciptakan keahlian digital. Saya percaya pada desain yang mengutamakan kinerja, penggunaan kembali kode, dan peningkatan diri yang berkelanjutan. Baik saat mengoptimalkan kueri SQL atau membangun antarmuka pengguna yang imersif, perhatian terhadap detail adalah hal yang mutlak.",
+    "subtitle": "Perjalanan dan Prinsip Kerja Saya",
+    "philosophy_title": "Prinsip Kerja",
+    "philosophy_text": "Bagi saya, pengembangan software bukan sekadar menulis kode, melainkan membangun karya digital yang berkualitas. Saya percaya pada pendekatan yang mengutamakan performa, kode yang dapat digunakan kembali, serta proses belajar yang berkelanjutan. Baik saat mengoptimalkan query SQL maupun membangun antarmuka yang nyaman digunakan, perhatian terhadap detail adalah hal yang tidak bisa ditawar.",
     "stats": {
       "experience": "Tahun Pengalaman",
       "projects": "Proyek Selesai",
@@ -28,49 +28,49 @@
     }
   },
   "skills": {
-    "title": "Keahlian Utama",
-    "subtitle": "Teknologi Interaktif & Klaster Keahlian",
-    "hover_instruction": "Tingkat kemahiran teknis dan keahlian saya di berbagai bidang",
-    "expert": "Ahli",
+    "title": "Keahlian",
+    "subtitle": "Teknologi dan Bidang Keahlian",
+    "hover_instruction": "Tingkat penguasaan saya pada berbagai teknologi dan bidang pengembangan",
+    "expert": "Mahir",
     "intermediate": "Menengah",
-    "beginner": "Pemula"
+    "beginner": "Dasar"
   },
   "projects": {
     "title": "Proyek Pilihan",
-    "subtitle": "Galeri pilihan hasil karya teknik dan produk digital saya",
+    "subtitle": "Kumpulan proyek dan produk digital yang pernah saya kerjakan",
     "filter_all": "Semua Proyek",
     "filter_web": "Aplikasi Web",
     "filter_mobile": "Aplikasi Mobile",
     "filter_backend": "Layanan Backend",
-    "view_demo": "Demo Langsung",
-    "view_code": "Repositori GitHub",
-    "private_repo": "Repositori Privat",
-    "details_title": "Ikhtisar Proyek",
+    "view_demo": "Live Demo",
+    "view_code": "Repository GitHub",
+    "private_repo": "Repository Privat",
+    "details_title": "Ringkasan Proyek",
     "technologies": "Teknologi yang Digunakan",
     "status": "Status Proyek",
-    "year": "Tahun Pembuatan",
+    "year": "Tahun",
     "duration": "Durasi"
   },
   "experience": {
     "title": "Pengalaman Kerja",
-    "subtitle": "Linimasa karir profesional dan pencapaian saya",
+    "subtitle": "Perjalanan karier dan pencapaian profesional",
     "present": "Sekarang"
   },
   "certifications": {
-    "title": "Sertifikasi Profesional",
-    "subtitle": "Kredensial teknis dan pelatihan terverifikasi",
+    "title": "Sertifikasi",
+    "subtitle": "Sertifikasi dan pelatihan yang telah diverifikasi",
     "verify": "Verifikasi Sertifikat",
     "download": "Unduh PDF",
-    "credential_id": "ID Kredensial"
+    "credential_id": "ID Sertifikat"
   },
   "contact": {
     "title": "Mari Terhubung",
-    "subtitle": "Mari kita bangun sesuatu yang luar biasa bersama.",
-    "description": "Punya pertanyaan, ide kolaborasi, atau ingin berdiskusi tentang proyek dan teknologi? Hubungi saya melalui salah satu platform berikut. Saya biasanya merespons dalam waktu 24 jam.",
+    "subtitle": "Mari wujudkan sesuatu yang bermanfaat bersama.",
+    "description": "Punya proyek yang menantang, peluang kerja, atau sekadar ingin berdiskusi? Hubungi saya melalui salah satu platform berikut. Saya biasanya merespons dalam waktu kurang dari 24 jam.",
     "copy_email": "Salin Alamat Email",
     "email_copied": "Email Berhasil Disalin!",
     "whatsapp_quick": "Kirim Pesan WhatsApp",
-    "status_online": "Online Sekarang"
+    "status_online": "Sedang Online"
   },
   "themes": {
     "light": "Terang",

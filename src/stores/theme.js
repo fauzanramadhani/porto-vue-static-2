@@ -2,20 +2,20 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useThemeStore = defineStore('theme', () => {
-  const theme = ref(localStorage.getItem('theme') || 'system')
+  const getInitialTheme = () => {
+    const saved = localStorage.getItem('theme')
+    if (saved === 'dark' || saved === 'light') {
+      return saved
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+
+  const theme = ref(getInitialTheme())
 
   const applyTheme = (newTheme) => {
     const root = document.documentElement
     
-    // Check dark mode
-    let isDark = false
-    if (newTheme === 'system') {
-      isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    } else {
-      isDark = newTheme === 'dark'
-    }
-
-    if (isDark) {
+    if (newTheme === 'dark') {
       root.classList.add('dark')
     } else {
       root.classList.remove('dark')
@@ -30,14 +30,6 @@ export const useThemeStore = defineStore('theme', () => {
 
   const initTheme = () => {
     applyTheme(theme.value)
-    
-    // Listen for system theme changes
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    mediaQuery.addEventListener('change', () => {
-      if (theme.value === 'system') {
-        applyTheme('system')
-      }
-    })
   }
 
   return {
@@ -46,3 +38,4 @@ export const useThemeStore = defineStore('theme', () => {
     initTheme
   }
 })
+

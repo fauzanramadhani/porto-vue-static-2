@@ -1,24 +1,20 @@
 <script setup>
 import { computed } from 'vue'
 import { useThemeStore } from '../../stores/theme'
-import { Sun, Moon, Laptop } from 'lucide-vue-next'
+import { Sun, Moon } from 'lucide-vue-next'
 
 const themeStore = useThemeStore()
 
 const cycleTheme = () => {
-  if (themeStore.theme === 'system') {
-    themeStore.setTheme('light')
-  } else if (themeStore.theme === 'light') {
+  if (themeStore.theme === 'light') {
     themeStore.setTheme('dark')
   } else {
-    themeStore.setTheme('system')
+    themeStore.setTheme('light')
   }
 }
 
 const currentIcon = computed(() => {
-  if (themeStore.theme === 'light') return Sun
-  if (themeStore.theme === 'dark') return Moon
-  return Laptop
+  return themeStore.theme === 'light' ? Sun : Moon
 })
 
 const labelText = computed(() => {

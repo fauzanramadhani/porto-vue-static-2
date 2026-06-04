@@ -40,7 +40,7 @@ onMounted(() => {
         :clear-alpha="0"
         power-preference="high-performance"
       >
-        <TresPerspectiveCamera :position="[0, 0, 4.5]" :fov="45" />
+        <TresPerspectiveCamera :position="[0, 0, 5.2]" :fov="45" />
         <TresAmbientLight :intensity="1.5" />
         <TresDirectionalLight :position="[2, 3, 2]" :intensity="1" />
         

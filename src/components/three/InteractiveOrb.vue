@@ -35,10 +35,10 @@ const vertexShader = `
     vNormal = normal;
     vPosition = position;
     
-    // Morphing deformation by combining sine waves
-    float displacement = sin(position.x * 3.0 + uTime * 1.2) * 0.12 +
-                         cos(position.y * 2.5 + uTime * 1.5) * 0.12 +
-                         sin(position.z * 3.2 + uTime * 1.0) * 0.12;
+    // Morphing deformation with slightly smaller displacement
+    float displacement = sin(position.x * 3.0 + uTime * 1.2) * 0.08 +
+                         cos(position.y * 2.5 + uTime * 1.5) * 0.08 +
+                         sin(position.z * 3.2 + uTime * 1.0) * 0.08;
                          
     vec3 newPosition = position + normal * displacement;
     gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
@@ -51,24 +51,16 @@ const fragmentShader = `
   varying vec3 vPosition;
 
   void main() {
-    // Base normals and view vector
     vec3 normal = normalize(vNormal);
     vec3 viewDir = normalize(cameraPosition - vPosition);
     
-    // Fresnel glow edge calculation
     float fresnel = pow(1.0 - max(dot(normal, viewDir), 0.0), 3.0);
     
-    // Futuristic gradient: Electric Blue to Cyber Violet
-    vec3 colorA = vec3(0.15, 0.45, 0.95); // Deep blue
-    vec3 colorB = vec3(0.55, 0.25, 0.95); // Violet
+    vec3 colorA = vec3(0.15, 0.45, 0.95);
+    vec3 colorB = vec3(0.55, 0.25, 0.95);
     
-    // Animated color shifting
     vec3 baseColor = mix(colorA, colorB, sin(vPosition.y + uTime * 0.5) * 0.5 + 0.5);
-    
-    // Apply Fresnel edge enhancement
     vec3 finalColor = baseColor + vec3(fresnel * 0.7);
-    
-    // Smooth alpha profile for a translucent, glassmorphic look
     float alpha = mix(0.12, 0.75, fresnel);
     
     gl_FragColor = vec4(finalColor, alpha);
@@ -79,14 +71,13 @@ const uniforms = {
   uTime: { value: 0 }
 }
 
-// Generate random points for the subtle background particle field
-const particleCount = 200
+// Tighten particle field dispersion boundaries to prevent edge-cropping
+const particleCount = 180
 const particlePositions = new Float32Array(particleCount * 3)
 for (let i = 0; i < particleCount * 3; i += 3) {
-  // Disperse inside a bounding box
-  particlePositions[i] = (Math.random() - 0.5) * 10
-  particlePositions[i + 1] = (Math.random() - 0.5) * 8
-  particlePositions[i + 2] = (Math.random() - 0.5) * 6
+  particlePositions[i] = (Math.random() - 0.5) * 4.5
+  particlePositions[i + 1] = (Math.random() - 0.5) * 3.5
+  particlePositions[i + 2] = (Math.random() - 0.5) * 2.5
 }
 
 // Frame loop using TresJS useLoop composable
@@ -95,29 +86,25 @@ const { onBeforeRender } = useLoop()
 onBeforeRender(({ delta }) => {
   uniforms.uTime.value += delta * 0.8
 
-  // Interactive mouse parallax damping (smooth follow)
-  targetPosition.x = mouse.x * 0.6
-  targetPosition.y = mouse.y * 0.4
+  // Interactive mouse parallax damping (reduced amplitude to stay in-bounds)
+  targetPosition.x = mouse.x * 0.35
+  targetPosition.y = mouse.y * 0.25
   
   currentPosition.x += (targetPosition.x - currentPosition.x) * 0.05
   currentPosition.y += (targetPosition.y - currentPosition.y) * 0.05
 
   if (meshRef.value) {
-    // Subtle auto rotation
     meshRef.value.rotation.y += delta * 0.15
     meshRef.value.rotation.x += delta * 0.08
     
-    // Apply smooth position offset
     meshRef.value.position.x = currentPosition.x
     meshRef.value.position.y = currentPosition.y
   }
   
   if (particlesRef.value) {
-    // Slowly drift particles
     particlesRef.value.rotation.y += delta * 0.02
     particlesRef.value.rotation.x += delta * 0.01
     
-    // Gentle floating translation matching mouse coordinates
     particlesRef.value.position.x = currentPosition.x * 0.3
     particlesRef.value.position.y = currentPosition.y * 0.3
   }
@@ -125,9 +112,9 @@ onBeforeRender(({ delta }) => {
 </script>
 
 <template>
-  <!-- Main Morphing Orb -->
+  <!-- Main Morphing Orb (Slightly smaller radius of 1.15 to prevent boundary clipping) -->
   <TresMesh ref="meshRef" :position="[0, 0, 0]">
-    <TresSphereGeometry :args="[1.4, 64, 64]" />
+    <TresSphereGeometry :args="[1.15, 64, 64]" />
     <TresShaderMaterial
       :vertex-shader="vertexShader"
       :fragment-shader="fragmentShader"

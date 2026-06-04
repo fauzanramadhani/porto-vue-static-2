@@ -84,7 +84,7 @@ const formatDate = (dateStr) => {
               <!-- Content panel -->
               <div class="flex-1 min-w-0">
                 <div class="flex items-start justify-between gap-2">
-                  <h3 class="font-display font-bold text-sm sm:text-base text-text-primary line-clamp-1 group-hover:text-accent-primary">
+                  <h3 class="font-display font-bold text-sm sm:text-base text-text-primary group-hover:text-accent-primary leading-snug pr-4">
                     {{ cert.title }}
                   </h3>
                   <div class="text-text-secondary">
@@ -107,56 +107,57 @@ const formatDate = (dateStr) => {
                   </Badge>
                 </div>
 
-                <!-- Expandable detail view containing verification URL links and PDF files -->
                 <Transition
                   enter-active-class="transition duration-300 ease-out"
                   enter-from-class="transform scale-y-95 opacity-0 max-h-0"
-                  enter-to-class="transform scale-y-100 opacity-100 max-h-[200px]"
+                  enter-to-class="transform scale-y-100 opacity-100 max-h-[300px]"
                   leave-active-class="transition duration-200 ease-in"
-                  leave-from-class="transform scale-y-100 opacity-100 max-h-[200px]"
+                  leave-from-class="transform scale-y-100 opacity-100 max-h-[300px]"
                   leave-to-class="transform scale-y-95 opacity-0 max-h-0"
                 >
-                  <div v-if="expandedCertId === cert.id" class="mt-5 pt-4 border-t border-border-primary space-y-4 origin-top overflow-hidden">
-                    <!-- Credential ID details -->
-                    <div v-if="cert.credentialId" class="flex items-center gap-2 text-xs">
-                      <CheckCircle class="w-4 h-4 text-emerald-500" />
-                      <span class="text-text-secondary font-medium font-display">
-                        {{ $t('certifications.credential_id') }}:
-                      </span>
-                      <code class="px-1.5 py-0.5 rounded bg-bg-tertiary border border-border-primary font-mono text-[10px] text-text-primary">
-                        {{ cert.credentialId }}
-                      </code>
-                    </div>
+                  <div v-if="expandedCertId === cert.id" class="origin-top overflow-hidden">
+                    <div class="mt-5 pt-4 border-t border-border-primary space-y-4">
+                      <!-- Credential ID details -->
+                      <div v-if="cert.credentialId" class="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2 text-xs">
+                        <div class="flex items-center gap-1.5 text-text-secondary font-medium font-display">
+                          <CheckCircle class="w-4 h-4 text-emerald-500" />
+                          <span>{{ $t('certifications.credential_id') }}:</span>
+                        </div>
+                        <code class="px-1.5 py-0.5 rounded bg-bg-tertiary border border-border-primary font-mono text-[10px] text-text-primary self-start sm:self-auto break-all">
+                          {{ cert.credentialId }}
+                        </code>
+                      </div>
 
-                    <!-- Description detail if exists -->
-                    <p v-if="cert.description" class="text-xs text-text-secondary leading-relaxed">
-                      {{ cert.description }}
-                    </p>
+                      <!-- Description detail if exists -->
+                      <p v-if="cert.description" class="text-xs text-text-secondary leading-relaxed">
+                        {{ cert.description }}
+                      </p>
 
-                    <!-- Verification action links row -->
-                    <div class="flex flex-wrap items-center gap-3 pt-2" @click.stop>
-                      <Button
-                        v-if="cert.verifyUrl"
-                        variant="primary"
-                        :href="cert.verifyUrl"
-                        target="_blank"
-                        class="text-xs px-3 py-1.5 rounded-lg shadow-sm cursor-pointer"
-                      >
-                        <span class="text-xs">{{ $t('certifications.verify') }}</span>
-                        <ExternalLink class="w-3.5 h-3.5 ml-1" />
-                      </Button>
-                      
-                      <!-- Links to local PDF in public folder -->
-                      <Button
-                        v-if="cert.file"
-                        variant="outline"
-                        :href="`/assets/sertif/${cert.file}`"
-                        target="_blank"
-                        class="text-xs px-3 py-1.5 rounded-lg shadow-sm cursor-pointer"
-                      >
-                        <FileDown class="w-3.5 h-3.5 mr-1" />
-                        <span class="text-xs">{{ $t('certifications.download') }}</span>
-                      </Button>
+                      <!-- Verification action links row -->
+                      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 w-full" @click.stop>
+                        <Button
+                          v-if="cert.verifyUrl"
+                          variant="primary"
+                          :href="cert.verifyUrl"
+                          target="_blank"
+                          class="text-xs px-3 py-2 rounded-lg shadow-sm cursor-pointer flex-1 justify-center text-center flex items-center"
+                        >
+                          <span class="text-xs">{{ $t('certifications.verify') }}</span>
+                          <ExternalLink class="w-3.5 h-3.5 ml-1" />
+                        </Button>
+                        
+                        <!-- Links to local PDF in public folder -->
+                        <Button
+                          v-if="cert.file"
+                          variant="outline"
+                          :href="`/assets/sertif/${cert.file}`"
+                          target="_blank"
+                          class="text-xs px-3 py-2 rounded-lg shadow-sm cursor-pointer flex-1 justify-center text-center flex items-center"
+                        >
+                          <FileDown class="w-3.5 h-3.5 mr-1" />
+                          <span class="text-xs">{{ $t('certifications.download') }}</span>
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </Transition>

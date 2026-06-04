@@ -31,7 +31,7 @@ const handleScrollTo = (id) => {
         v-motion
         :initial="{ opacity: 0, x: -30 }"
         :enter="{ opacity: 1, x: 0, transition: { duration: 800, ease: 'easeOut' } }"
-        class="flex flex-col space-y-6 text-center md:text-left order-2 md:order-1"
+        class="flex flex-col space-y-6 text-center md:text-left order-2 md:order-1 relative z-10"
       >
         <div class="space-y-3">
           <p class="text-sm font-semibold tracking-wider text-accent-primary uppercase font-display">
@@ -73,7 +73,7 @@ const handleScrollTo = (id) => {
         v-motion
         :initial="{ opacity: 0, scale: 0.9 }"
         :enter="{ opacity: 1, scale: 1, transition: { duration: 1000, ease: 'easeOut', delay: 200 } }"
-        class="flex items-center justify-center order-1 md:order-2"
+        class="relative flex items-center justify-center order-1 md:order-2 pointer-events-none z-10 opacity-100"
       >
         <HeroCanvas />
       </div>

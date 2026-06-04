@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "certifications": "Certifications",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Crafting High-Performance Full Stack & Mobile Solutions",
+    "subtagline": "Software Engineer • Mobile Developer",
+    "intro": "I turn complex requirements into elegant, clean, and highly optimized digital experiences.",
+    "cta_projects": "View My Work",
+    "cta_contact": "Get in Touch",
+    "status_available": "Available for Work"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My Story & Professional Philosophy",
+    "philosophy_title": "Professional Philosophy",
+    "philosophy_text": "To me, development is not just about writing lines of code; it is about crafting digital craftsmanship. I believe in performance-first design, code reusability, and continuous self-improvement. Whether optimizing a SQL query or building an immersive user interface, attention to detail is non-negotiable.",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "certs": "Certifications"
+    }
+  },
+  "skills": {
+    "title": "Core Skills",
+    "subtitle": "Interactive Technology & Skill Clusters",
+    "hover_instruction": "My technical proficiency and depth of expertise across different areas",
+    "expert": "Expert",
+    "intermediate": "Intermediate",
+    "beginner": "Beginner"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A curated gallery of engineering craftsmanship and digital products",
+    "filter_all": "All Projects",
+    "filter_web": "Web Apps",
+    "filter_mobile": "Mobile Apps",
+    "filter_backend": "Backend Services",
+    "view_demo": "Live Demo",
+    "view_code": "GitHub Repo",
+    "private_repo": "Private Repository",
+    "details_title": "Project Overview",
+    "technologies": "Technologies Used",
+    "status": "Project Status",
+    "year": "Year Built",
+    "duration": "Duration"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional career timeline and achievements",
+    "present": "Present"
+  },
+  "certifications": {
+    "title": "Professional Certifications",
+    "subtitle": "Verified technical credentials and training",
+    "verify": "Verify Credential",
+    "download": "Download PDF",
+    "credential_id": "Credential ID"
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Let's build something remarkable together.",
+    "description": "Have a challenging project, open position, or just want to chat? Reach out through any of these platforms. I typically respond within 24 hours.",
+    "copy_email": "Copy Email Address",
+    "email_copied": "Email Copied!",
+    "whatsapp_quick": "Send WhatsApp Message",
+    "status_online": "Online Now"
+  },
+  "themes": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}

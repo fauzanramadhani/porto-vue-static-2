@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "company": "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+    "position": {
+      "en": "Mobile Developer Student",
+      "id": "Siswa Pengembang Mobile"
+    },
+    "logoUrl": "/assets/logo_bangkit.jpg",
+    "startMonth": {
+      "en": "February",
+      "id": "Februari"
+    },
+    "startYear": "2023",
+    "endMonth": {
+      "en": "July",
+      "id": "Juli"
+    },
+    "endYear": "2023",
+    "isCurrent": false,
+    "description": {
+      "en": [
+        "Completed an intensive, industry-led program focused on Mobile Development, covering Android fundamentals using Kotlin.",
+        "Learned core concepts such as Clean Architecture, MVVM pattern, RESTful API integration, and modern Android development practices.",
+        "Developed mobile applications as part of a capstone project, collaborating with a cross-functional team (Cloud Computing & Machine Learning paths).",
+        "Gained hands-on experience in version control (Git), agile workflow, and professional communication in a team environment.",
+        "Selected as a Bangkit Academy graduate with strong fundamentals in building scalable and maintainable mobile applications."
+      ],
+      "id": [
+        "Menyelesaikan program intensif berbasis industri yang berfokus pada Pengembangan Mobile, mencakup dasar-dasar Android menggunakan Kotlin.",
+        "Mempelajari konsep inti seperti Clean Architecture, pola MVVM, integrasi RESTful API, dan praktik pengembangan Android modern.",
+        "Mengembangkan aplikasi mobile sebagai bagian dari proyek akhir, berkolaborasi dengan tim lintas disiplin (jalur Cloud Computing & Machine Learning).",
+        "Mendapatkan pengalaman langsung dalam kontrol versi (Git), alur kerja agile, dan komunikasi profesional dalam lingkungan tim.",
+        "Terpilih sebagai lulusan Bangkit Academy dengan dasar-dasar yang kuat dalam membangun aplikasi mobile yang skalabel dan mudah dipelihara."
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "company": "Bluhabit",
+    "position": {
+      "en": "Mobile Developer Intern",
+      "id": "Magang Pengembang Mobile"
+    },
+    "logoUrl": "/assets/bluhabit.jpg",
+    "startMonth": {
+      "en": "August",
+      "id": "Agustus"
+    },
+    "startYear": "2023",
+    "endMonth": {
+      "en": "February",
+      "id": "Februari"
+    },
+    "endYear": "2024",
+    "isCurrent": false,
+    "description": {
+      "en": [
+        "Collaborated within a team to develop financial applications and veterinary (pet care) applications.",
+        "Implemented Clean Architecture with MVVM pattern to ensure scalability, maintainability, and clear separation of concerns.",
+        "Contributed to building efficient, structured, and high-quality mobile applications."
+      ],
+      "id": [
+        "Berkolaborasi dalam tim untuk mengembangkan aplikasi keuangan dan aplikasi kedokteran hewan (perawatan hewan peliharaan).",
+        "Menerapkan Clean Architecture dengan pola MVVM untuk memastikan skalabilitas, kemudahan pemeliharaan, dan pemisahan kekhawatiran yang jelas.",
+        "Berkontribusi dalam membangun aplikasi mobile yang efisien, terstruktur, dan berkualitas tinggi."
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "company": "Suitmedia",
+    "position": {
+      "en": "Mobile Developer Intern",
+      "id": "Magang Pengembang Mobile"
+    },
+    "logoUrl": "/assets/logo_suitmedia.png",
+    "startMonth": {
+      "en": "February",
+      "id": "Februari"
+    },
+    "startYear": "2024",
+    "endMonth": {
+      "en": "July",
+      "id": "Juli"
+    },
+    "endYear": "2024",
+    "isCurrent": false,
+    "description": {
+      "en": [
+        "Developed native mobile applications using Kotlin with modern asynchronous programming approaches.",
+        "Utilized Kotlin Flow, StateFlow, and SharedFlow to improve performance through asynchronous and non-blocking data handling.",
+        "Applied internal Clean Code architecture standards to ensure maintainable, scalable, and high-quality codebase.",
+        "Collaborated with cross-functional teams to deliver robust and user-friendly applications."
+      ],
+      "id": [
+        "Mengembangkan aplikasi mobile native menggunakan Kotlin dengan pendekatan pemrograman asinkron modern.",
+        "Memanfaatkan Kotlin Flow, StateFlow, dan SharedFlow untuk meningkatkan kinerja melalui penanganan data asinkron dan non-blocking.",
+        "Menerapkan standar arsitektur Clean Code internal untuk memastikan basis kode yang mudah dipelihara, skalabel, dan berkualitas tinggi.",
+        "Berkolaborasi dengan tim lintas fungsi untuk menghasilkan aplikasi yang tangguh dan ramah pengguna."
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "company": "PT. Gelora Aksara Pratama (Penerbit Erlangga Group)",
+    "position": {
+      "en": "Full Stack Developer",
+      "id": "Full Stack Developer"
+    },
+    "logoUrl": "/assets/logo_gap.png",
+    "startMonth": {
+      "en": "August",
+      "id": "Agustus"
+    },
+    "startYear": "2024",
+    "endMonth": null,
+    "endYear": null,
+    "isCurrent": true,
+    "description": {
+      "en": [
+        "Developed and enhanced features for internal HRIS applications across both mobile and web platforms.",
+        "Built internal enterprise applications to support operational processes across multiple business units.",
+        "Developed two e-commerce applications including payment gateway integration and transaction flow management.",
+        "Handled CI/CD pipelines using GitHub Actions, including automated deployment, backup management, system maintenance, and security implementation.",
+        "Managed end-to-end full stack development responsibilities, covering frontend, backend, infrastructure, and production support.",
+        "Communicated directly with end-users to identify issues, provide solutions, and ensure quick resolution.",
+        "Collaborated within a team to deliver reliable and scalable software solutions."
+      ],
+      "id": [
+        "Mengembangkan dan meningkatkan fitur untuk aplikasi HRIS internal di platform mobile dan web.",
+        "Membangun aplikasi perusahaan internal untuk mendukung proses operasional di beberapa unit bisnis.",
+        "Mengembangkan dua aplikasi e-commerce termasuk integrasi payment gateway dan manajemen alur transaksi.",
+        "Menangani pipeline CI/CD menggunakan GitHub Actions, termasuk otomatisasi deployment, manajemen cadangan data, pemeliharaan sistem, dan implementasi keamanan.",
+        "Mengelola tanggung jawab pengembangan full stack dari awal hingga akhir, mencakup frontend, backend, infrastruktur, dan dukungan produksi.",
+        "Berkomunikasi langsung dengan pengguna akhir untuk mengidentifikasi masalah, memberikan solusi, dan memastikan penyelesaian cepat.",
+        "Berkolaborasi dalam tim untuk memberikan solusi perangkat lunak yang andal dan skalabel."
+      ]
+    }
+  }
+]

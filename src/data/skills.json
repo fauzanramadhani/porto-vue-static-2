@@ -1,0 +1,42 @@
+[
+  {
+    "category": "Frontend",
+    "skills": [
+      { "name": "HTML5", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg", "level": "Expert" },
+      { "name": "CSS3", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg", "level": "Expert" },
+      { "name": "JavaScript", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg", "level": "Expert" },
+      { "name": "TypeScript", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg", "level": "Intermediate" },
+      { "name": "Vue.js", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg", "level": "Expert" },
+      { "name": "React", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg", "level": "Intermediate" },
+      { "name": "Tailwind CSS", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original-wordmark.svg", "level": "Expert" }
+    ]
+  },
+  {
+    "category": "Mobile Development",
+    "skills": [
+      { "name": "Kotlin", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg", "level": "Expert" },
+      { "name": "Android Native", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg", "level": "Expert" },
+      { "name": "Flutter", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg", "level": "Expert" },
+      { "name": "Dart", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg", "level": "Expert" }
+    ]
+  },
+  {
+    "category": "Backend",
+    "skills": [
+      { "name": "Node.js", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg", "level": "Expert" },
+      { "name": "Express.js", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg", "level": "Expert" },
+      { "name": "Golang", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg", "level": "Intermediate" },
+      { "name": "Laravel", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg", "level": "Intermediate" }
+    ]
+  },
+  {
+    "category": "Databases & DevOps",
+    "skills": [
+      { "name": "MongoDB", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg", "level": "Intermediate" },
+      { "name": "PostgreSQL", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg", "level": "Intermediate" },
+      { "name": "MySQL", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg", "level": "Expert" },
+      { "name": "Docker", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg", "level": "Intermediate" },
+      { "name": "Git", "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg", "level": "Expert" }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "platform": "GitHub",
+    "url": "https://github.com/fauzanramadhani",
+    "icon": "Github"
+  },
+  {
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/in/fauzan-ramadhani-0a4ab4247",
+    "icon": "Linkedin"
+  },
+  {
+    "platform": "WhatsApp",
+    "url": "https://wa.me/6282260012008",
+    "icon": "MessageSquare"
+  },
+  {
+    "platform": "Instagram",
+    "url": "https://www.instagram.com/zans05_",
+    "icon": "Instagram"
+  },
+  {
+    "platform": "Email",
+    "url": "mailto:fauzanramadhani06@gmail.com",
+    "icon": "Mail"
+  }
+]

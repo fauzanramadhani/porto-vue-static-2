@@ -1,0 +1,8 @@
+{
+  "siteName": "Fauzan Gracia Ramadhani Portfolio",
+  "title": "Fauzan Gracia Ramadhani — Software Engineer",
+  "metaDescription": "Portfolio of Fauzan Gracia Ramadhani, a passionate Full Stack Software Engineer specializing in modern web, native Android, and cross-platform mobile apps.",
+  "defaultTheme": "dark",
+  "defaultLocale": "en",
+  "availableLocales": ["en", "id"]
+}

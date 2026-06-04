@@ -1,0 +1,35 @@
+{
+  "name": "porto-vue-static-2",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tresjs/cientos": "^5.7.2",
+    "@tresjs/core": "^5.8.1",
+    "@vueuse/core": "^14.3.0",
+    "@vueuse/motion": "^3.0.3",
+    "lucide-vue-next": "^1.0.0",
+    "pinia": "^3.0.4",
+    "three": "^0.184.0",
+    "vue": "^3.5.32",
+    "vue-i18n": "^11.4.2",
+    "vue-router": "^5.0.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0",
+    "vite": "^8.0.8",
+    "vite-plugin-vue-devtools": "^8.1.1"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

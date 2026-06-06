@@ -76,5 +76,10 @@
     "light": "Light",
     "dark": "Dark",
     "system": "System"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "back_home": "Back to Home"
   }
 }

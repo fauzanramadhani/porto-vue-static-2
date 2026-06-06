@@ -76,5 +76,10 @@
     "light": "Terang",
     "dark": "Gelap",
     "system": "Sistem"
+  },
+  "notFound": {
+    "title": "Halaman Tidak Ditemukan",
+    "description": "Halaman yang Anda cari mungkin telah dihapus, berganti nama, atau untuk sementara tidak tersedia.",
+    "back_home": "Kembali ke Beranda"
   }
 }

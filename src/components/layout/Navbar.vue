@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useWindowScroll } from '@vueuse/core'
 import { Menu, X } from 'lucide-vue-next'
 import ThemeToggle from '../ui/ThemeToggle.vue'
@@ -9,6 +10,9 @@ const { y } = useWindowScroll()
 const isScrolled = computed(() => y.value > 20)
 const activeSection = ref('home')
 const isMobileMenuOpen = ref(false)
+
+const route = useRoute()
+const isNotFound = computed(() => route.name === 'not-found')
 
 const navLinks = [
   { id: 'home', key: 'nav.home' },
@@ -72,13 +76,13 @@ const handleLinkClick = (id) => {
     ]">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <!-- Logo -->
-        <a href="#home" @click.prevent="handleLinkClick('home')"
+        <a v-if="!isNotFound" href="#home" @click.prevent="handleLinkClick('home')"
           class="font-display font-bold text-xl tracking-tight text-text-primary focus-visible:outline-none cursor-pointer">
           FR<span class="text-accent-primary">.</span>
         </a>
 
         <!-- Desktop Nav Navigation -->
-        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+        <nav v-if="!isNotFound" class="hidden md:flex items-center space-x-1 lg:space-x-2">
           <a v-for="link in navLinks" :key="link.id" :href="`#${link.id}`" @click.prevent="handleLinkClick(link.id)"
             class="relative px-3.5 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer select-none font-display focus-visible:outline-none"
             :class="[
@@ -94,13 +98,13 @@ const handleLinkClick = (id) => {
         </nav>
 
         <!-- Desktop Utilities -->
-        <div class="hidden md:flex items-center space-x-3">
+        <div v-if="!isNotFound" class="hidden md:flex items-center space-x-3">
           <LangSwitcher />
           <ThemeToggle />
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="flex items-center space-x-3 md:hidden">
+        <div v-if="!isNotFound" class="flex items-center space-x-3 md:hidden">
           <LangSwitcher />
           <ThemeToggle />
           <button @click="toggleMobileMenu"
@@ -109,6 +113,12 @@ const handleLinkClick = (id) => {
             <X v-if="isMobileMenuOpen" class="w-6 h-6" />
             <Menu v-else class="w-6 h-6" />
           </button>
+        </div>
+
+        <!-- NotFound Utilities (Only visible on 404 page, aligned to the right) -->
+        <div v-if="isNotFound" class="flex items-center space-x-3 ml-auto">
+          <LangSwitcher />
+          <ThemeToggle />
         </div>
       </div>
     </div>

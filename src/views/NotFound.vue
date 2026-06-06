@@ -14,7 +14,7 @@ useTitle('404 — Page Not Found')
     <div class="absolute bottom-[20%] right-[10%] w-96 h-96 rounded-full bg-purple-500/5 dark:bg-purple-500/10 blur-3xl pointer-events-none" />
 
     <div class="max-w-md w-full relative z-10">
-      <Card :glow="true" :glass="true" :hoverEffect="false" class="p-8 sm:p-10 text-center border-border-primary">
+      <Card :glow="true" :glass="false" :hoverEffect="false" class="p-8 sm:p-10 text-center border-border-secondary/20 shadow-2xl bg-bg-secondary">
         <div class="flex flex-col items-center space-y-6">
           <!-- Big 404 Text with Gradient and Subtle Glow -->
           <div class="relative">

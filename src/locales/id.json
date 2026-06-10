@@ -30,10 +30,7 @@
   "skills": {
     "title": "Keahlian",
     "subtitle": "Teknologi dan Bidang Keahlian",
-    "hover_instruction": "Tingkat penguasaan saya pada berbagai teknologi dan bidang pengembangan",
-    "expert": "Mahir",
-    "intermediate": "Menengah",
-    "beginner": "Dasar"
+    "hover_instruction": "Teknologi dan alat yang saya gunakan untuk membangun aplikasi"
   },
   "projects": {
     "title": "Proyek Pilihan",

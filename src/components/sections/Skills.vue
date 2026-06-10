@@ -43,30 +43,14 @@ const filteredSkills = computed(() => {
   }
 })
 
-const getProficiencyPercentage = (level) => {
-  if (level === 'Expert') return 90
-  if (level === 'Intermediate') return 70
-  return 50
-}
-
-const getCategoryColorClass = (category) => {
-  const colors = {
-    'Frontend': 'bg-blue-500',
-    'Mobile Development': 'bg-purple-500',
-    'Backend': 'bg-emerald-500',
-    'Databases & DevOps': 'bg-indigo-500'
-  }
-  return colors[category] || 'bg-accent-primary'
-}
-
 const getCategoryGlow = (category) => {
   const glows = {
-    'Frontend': 'shadow-blue-500/5 border-blue-500/20 dark:border-blue-500/15',
-    'Mobile Development': 'shadow-purple-500/5 border-purple-500/20 dark:border-purple-500/15',
-    'Backend': 'shadow-emerald-500/5 border-emerald-500/20 dark:border-emerald-500/15',
-    'Databases & DevOps': 'shadow-indigo-500/5 border-indigo-500/20 dark:border-indigo-500/15'
+    'Frontend': 'shadow-blue-500/5 border-blue-500/30 dark:border-blue-500/25',
+    'Mobile Development': 'shadow-purple-500/5 border-purple-500/30 dark:border-purple-500/25',
+    'Backend': 'shadow-emerald-500/5 border-emerald-500/30 dark:border-emerald-500/25',
+    'Databases & DevOps': 'shadow-indigo-500/5 border-indigo-500/30 dark:border-indigo-500/25'
   }
-  return glows[category] || 'shadow-accent-primary/5 border-accent-primary/15'
+  return glows[category] || 'shadow-accent-primary/5 border-accent-primary/25'
 }
 </script>
 
@@ -137,12 +121,12 @@ const getCategoryGlow = (category) => {
           >
             <Card
               :glow="true"
-              :glass="true"
-              :hoverEffect="false"
-              class="h-44 relative"
+              :glass="false"
+              :hoverEffect="true"
+              class="h-32 relative shadow-md dark:shadow-none"
               :class="getCategoryGlow(skill.category)"
             >
-              <div class="p-5 flex flex-col items-center justify-between text-center h-full w-full">
+              <div class="p-4 flex flex-col items-center justify-center text-center h-full w-full">
                 <!-- Icon/Logo -->
                 <div class="w-10 h-10 flex items-center justify-center mb-2 relative">
                   <img
@@ -154,30 +138,13 @@ const getCategoryGlow = (category) => {
                 </div>
 
                 <!-- Name & Category/Info -->
-                <div class="flex flex-col items-center mb-2">
+                <div class="flex flex-col items-center">
                   <span class="font-display font-semibold text-text-primary text-sm tracking-wide">
                     {{ skill.name }}
                   </span>
                   <span class="text-[9px] text-text-secondary uppercase tracking-widest leading-none mt-1">
                     {{ skill.category.split(' ')[0] }}
                   </span>
-                </div>
-
-                <!-- Progress Bar measuring expertise -->
-                <div class="w-full px-1 mt-auto">
-                  <div class="flex justify-between items-center mb-1 text-[10px] text-text-secondary">
-                    <span class="font-medium">
-                      {{ skill.level === 'Expert' ? $t('skills.expert') : (skill.level === 'Intermediate' ? $t('skills.intermediate') : $t('skills.beginner')) }}
-                    </span>
-                    <span class="font-mono opacity-80">{{ getProficiencyPercentage(skill.level) }}%</span>
-                  </div>
-                  <div class="w-full bg-border-primary/50 dark:bg-border-primary/30 h-1.5 rounded-full overflow-hidden">
-                    <div
-                      class="h-full rounded-full transition-all duration-500"
-                      :class="getCategoryColorClass(skill.category)"
-                      :style="{ width: `${getProficiencyPercentage(skill.level)}%` }"
-                    ></div>
-                  </div>
                 </div>
               </div>
             </Card>

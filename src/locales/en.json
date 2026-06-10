@@ -30,10 +30,7 @@
   "skills": {
     "title": "Skills",
     "subtitle": "Interactive Technology & Skill Clusters",
-    "hover_instruction": "My technical proficiency and depth of expertise across different areas",
-    "expert": "Expert",
-    "intermediate": "Intermediate",
-    "beginner": "Beginner"
+    "hover_instruction": "Technologies and tools I work with to build applications"
   },
   "projects": {
     "title": "Featured Projects",

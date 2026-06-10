@@ -251,16 +251,20 @@
     "id": 8,
     "title": "Digital Proposal System",
     "description": {
-      "en": "Internal system for product proposal creation.",
-      "id": "Sistem internal untuk pembuatan proposal produk."
+      "en": "Vue and Express-based internal system for product proposal creation.",
+      "id": "Sistem internal untuk pembuatan proposal produk berbasis Vue dan Express."
     },
     "thumbnail": "",
     "image": "",
     "category": "Web Apps",
     "technologies": [
       {
-        "name": "Laravel",
-        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg"
+        "name": "Vue.js",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg"
+      },
+      {
+        "name": "Express.js",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
       },
       {
         "name": "MySQL",
@@ -271,8 +275,8 @@
     "status": "Completed",
     "duration": "Ongoing",
     "overview": {
-      "en": "Developed a Laravel-based digital proposal system to simplify the creation and management of product proposals. I focused on optimizing document workflows, managing role-based access control, and fixing bugs to ensure system stability in supporting business operations.",
-      "id": "Mengembangkan sistem proposal digital berbasis Laravel untuk menyederhanakan pembuatan dan pengelolaan proposal produk. Saya fokus pada pengoptimalan alur kerja dokumen, pengelolaan kontrol akses berbasis peran, dan perbaikan bug untuk memastikan stabilitas sistem dalam mendukung operasional bisnis."
+      "en": "Developed a digital proposal system with a Vue.js frontend architecture and an Express.js backend to simplify the creation and management of product proposals. I focused on optimizing document workflows, managing role-based access control, and fixing bugs to ensure system stability in supporting business operations.",
+      "id": "Mengembangkan sistem proposal digital dengan arsitektur frontend Vue.js dan backend Express.js untuk menyederhanakan pembuatan dan pengelolaan proposal produk. Saya fokus pada pengoptimalan alur kerja dokumen, pengelolaan kontrol akses berbasis peran, dan perbaikan bug untuk memastikan stabilitas sistem dalam mendukung operasional bisnis."
     },
     "links": {
       "demo": null,
@@ -317,6 +321,66 @@
     "links": {
       "demo": null,
       "github": null
+    }
+  },
+  {
+    "id": 10,
+    "title": "Zrya",
+    "description": {
+      "en": "An open-source alternative to Jira for project management and issue tracking.",
+      "id": "Alternatif sumber terbuka (open-source) untuk Jira untuk manajemen proyek dan pelacakan masalah."
+    },
+    "thumbnail": "",
+    "image": "",
+    "category": "Web Apps",
+    "technologies": [
+      {
+        "name": "Vue.js",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+      },
+      {
+        "name": "Express.js",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
+      },
+      {
+        "name": "Prisma",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/prisma/prisma-original.svg"
+      },
+      {
+        "name": "Redis",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+      },
+      {
+        "name": "Socket.IO",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/socketio/socketio-original.svg"
+      }
+    ],
+    "year": "2026",
+    "status": "Completed",
+    "duration": "Ongoing",
+    "overview": {
+      "en": "Developed Zrya, an open-source project management and issue tracking system inspired by Jira. Built as a full-stack application, it features workspace-based multi-tenancy, Kanban and Scrum boards with drag-and-drop layout, sprint planning, flexible automation rules, real-time collaboration with Socket.IO, and a comprehensive reporting dashboard. I designed the architecture to handle complex workflows, role-based access control, and asynchronous job processing using BullMQ and Redis.",
+      "id": "Mengembangkan Zrya, sistem manajemen proyek dan pelacakan masalah sumber terbuka (open-source) yang terinspirasi oleh Jira. Dibangun sebagai aplikasi full-stack, sistem ini memiliki multi-tenancy berbasis workspace, papan Kanban dan Scrum dengan tata letak drag-and-drop, perencanaan sprint, aturan otomatisasi yang fleksibel, kolaborasi real-time dengan Socket.IO, dan dasbor pelaporan yang komprehensif. Saya merancang arsitektur untuk menangani alur kerja yang kompleks, kontrol akses berbasis peran (RBAC), dan pemrosesan pekerjaan asinkron menggunakan BullMQ dan Redis."
+    },
+    "links": {
+      "demo": null,
+      "github": "https://github.com/fauzanramadhani/Zyra"
     }
   }
 ]
